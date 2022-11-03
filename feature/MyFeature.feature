@@ -1,5 +1,5 @@
 
-Feature: A  Valid User is able to remove added products from the cart
+Feature: A   Valid User is able to remove added products from the cart
 
 Background:User is already registered , knows his valid login Pass
 
