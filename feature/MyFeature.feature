@@ -1,4 +1,4 @@
-
+#I will merge my branch files with the main file at the end So that my completed and correct work can be shared with eveyone
 Feature: A   Valid User is able to remove added products from the cart
 
 Background:User is already registered , knows his valid login Pass
