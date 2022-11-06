@@ -1,4 +1,4 @@
-According to task 4 & 5 division technique recommended by sir on slack,We had meeting in which we all came and discussed how to tackle task 4,5 . We discussed with each other that what is basically task 4 and 5 and what is the purpose of Task4 and Task5 .
+According to task 4 & 5 division technique recommended by sir on slack,We had meeting in which we all came and discussed how to tackle task 4,5 . We discussed with each other that what is basically task 4 and 5 and what is the purpose of Task4 and Task5 ..
 
 Conclusion of Our Meeting Discussion:
 
