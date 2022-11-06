@@ -2,7 +2,7 @@
 This assignment of Software Quality Assurance Course is related to Automation of testing
 
 
-Existing Testing automation testcases observations and understandings:-
+Existing Testing  automation testcases observations and understandings:-
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
