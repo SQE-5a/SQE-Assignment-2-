@@ -2,11 +2,11 @@
 This assignment of Software Quality Assurance Course is related to Automation of testing
 
 
-Existing Testing  automation testcases observations and understandings:-
+ Observations and Understandings of Existing Testing (ui,api,unit)automation done by Magento :-
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-OBSERVATIONS OF EXISTING API TESTING AUTOMATION done by magento (By:Jawad Haider):-
+OBSERVATIONS OF EXISTING API TESTING AUTOMATION done by magento (By:Jawad Haider):
 
 ->Language used for api test cases automation by magento website luma is php.They have done their most of api test cases automation in php.
 ->They have done api testing automation for Controller, Model, Exception.
