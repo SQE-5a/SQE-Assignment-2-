@@ -5,7 +5,7 @@ This assignment of Software Quality Assurance Course is related to Automation of
 Existing Testing automation testcases observations and understandings:-
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 API EXISTING API TEST CASE AUTOMATION OBSERVATIONS(By:Jawad Haider):
 
 ->Language used for api test cases automation by magento website luma is php.They have done their most of api test cases automation in php.
@@ -47,3 +47,5 @@ BuildOutputDataArray($testDataObject, $testDataObjectType) function will be call
 assertEquals($expectedOutputDataArray, $outputData) function is used to check whether api test true or false.
     ->If every variable value of outputData is equal to expectedOutputDataArray variables values then api test is true . 
     ->If any variable value of outputData is not equal to expectedOutputDataArray variables values then api test is false . 
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------
