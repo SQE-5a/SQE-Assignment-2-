@@ -15,7 +15,7 @@ testing.
 
 ## Language Chosen:
 As discussed in the meeting held today at 11:00 P.M, we discussed that
-`python` will be a good choice for us for testing. 
+`python` will be a good choice for us for testing.. 
 
 ### Packages of Python:
 We will be using basically two packages:
