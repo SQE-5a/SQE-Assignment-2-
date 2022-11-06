@@ -26,7 +26,7 @@ public function testDataObjectProcessor()
     {
         $objectManager =  new ObjectManager($this);
         /** @var TestDataObject $testDataObject */
-        $testDataObject = $objectManager->getObject(TestDataObject::class);
+        $testDataObject = $objectManager->getObject(TestDataObject::class);.
 
         $expectedOutputDataArray = [
             'id' => '1',
