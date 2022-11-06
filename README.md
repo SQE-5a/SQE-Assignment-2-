@@ -49,3 +49,44 @@ assertEquals($expectedOutputDataArray, $outputData) function is used to check wh
     ->If any variable value of outputData is not equal to expectedOutputDataArray variables values then api test is false . 
     
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OBSERVATIONS OF EXISTING API TESTING AUTOMATION done by magento (By:Muhammad Hashim):
+
+-> The language used for UI Automation is Xml.
+-> The have done UI autonmtion for the multiple components of the website.
+-> They have use xml version 1.o for the testing.
+-> For automation in this language multiple keywords are used such as annotation,description,antigroup,actiongroup.
+
+Following is the link of one automation done in the website
+   magento2/app/code/Magento/Ui/Test/Mftf/ActionGroup/AdminGridAssertTotalPageCountActionGroup.xml
+
+
+Following is the code:
+
+<actionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/actionGroupSchema.xsd">
+    <actionGroup name="AdminGridAssertTotalPageCountActionGroup">
+        <annotations>
+            <description>
+                Assert total page count on admin grid
+            </description>
+        </annotations>
+        <arguments>
+            <argument name="expectedTotalPageCount" defaultValue="1" type="string"/>
+        </arguments>
+
+        <waitForElementVisible selector="{{AdminDataGridPaginationSection.totalPagesCount('expectedTotalPageCount')}}" stepKey="waitForTotalPagesCountToBeVisible"/>
+    </actionGroup>
+</actionGroups>
+
+
+-> First they use the actiongroup in which link is stored.It is done for reusability purposes.
+-> Here is annotation also used, its sole purpose is to specify schema components.
+-> An argument is what you pass into a function (also known as a subroutine). Arguments are also known as parameters. A function might take an argument and use it      to calculate something or modify the argument itself.
+-> .waitForElementVisible () Suggest edits Waits a given time in milliseconds (default 5000ms) for an element to be visible in the page before performing any other commands or assertions. If the element fails to be present and visible in the specified amount of time, the test fails.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
