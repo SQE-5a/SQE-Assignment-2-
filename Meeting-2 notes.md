@@ -1,7 +1,7 @@
 
 ## Meeting 2 Notes
 ### Work Done:
-We all came into the meet and discussed that how we will be using python and on which ide we will be using python for testing ui automation for our gherkin languages of test cases .
+We all came into the meet and discussed that how we will be using python and on which ide we will be using python for testing ui automation for our gherkin languages of test cases ..
 
 ### Installation:
 So we installed python ,installed gherkin in vscode used import for gherkin.
