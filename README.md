@@ -50,7 +50,7 @@ assertEquals($expectedOutputDataArray, $outputData) function is used to check wh
     
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-OBSERVATIONS OF EXISTING API TESTING AUTOMATION done by magento (By:Muhammad Hashim):
+OBSERVATIONS OF EXISTING UI TESTING AUTOMATION done by magento (By:Muhammad Hashim):
 
 -> The language used for UI Automation is Xml.
 -> The have done UI autonmtion for the multiple components of the website.
