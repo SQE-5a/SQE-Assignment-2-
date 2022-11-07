@@ -136,10 +136,6 @@ In describe we can use `beforeEach` and `afterEach` functions performing a prepa
         });
 
 
-it('Check addAction function', function () {
-            expect(model.addAction('delete', action)).toBe(model);
-        });
-
         it('Check getAction function', function () {
             var someAction = _.clone(action);
 
