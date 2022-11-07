@@ -88,5 +88,92 @@ Following is the code:
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
+# OBSERVATIONS OF EXISTING UNIT TESTING AUTOMATION done by magento (By: Irtaza Zulfiqar):
+
+## What is a Unit Test?
+
+A unit test checks how a piece of system software behaves. It checks to see if a small, isolated section of code known as a "unit" functions as the developer intended.
+By contrasting the actual behaviour of the smallest bits or components of an application with the predicted behaviour in total isolation, unit tests validate the application as a whole. In this context, "full isolation" indicates that developers do not link the programme to external dependencies like databases, the filesystem, or HTTP services during unit testing. As a result, unit tests are able to run quickly and consistently because they won't encounter integration issues that would cause them to fail.
 
 
+## Main Components of Unit Testing:
+A Jasmine test consists of main two parts:
+
+### describe blocks
+### it blocks
+Both the describe and it functions contains two parameters:
+
+a text string with description of what is going to be done
+a function with block of code implementing described action
+
+In describe we can use `beforeEach` and `afterEach` functions performing a preparation of what must be done before and after every `it` test followed.
+
+## Code:
+
+
+    describe('ui/js/grid/columns/actions', function () {
+        var model,
+            action;
+
+        beforeEach(function () {
+            model = new Actions({
+                index: 'actions',
+                name: 'listing_action',
+                indexField: 'id',
+                dataScope: '',
+                rows: [{
+                    identifier: 'row'
+                }]
+            });
+            action = {
+                index: 'delete',
+                hidden: true,
+                rowIndex: 0,
+                callback: function() {
+                    return true;
+                }
+            };
+        });
+
+
+it('Check addAction function', function () {
+            expect(model.addAction('delete', action)).toBe(model);
+        });
+
+        it('Check getAction function', function () {
+            var someAction = _.clone(action);
+
+            someAction.index = 'edit';
+            model.addAction('edit', someAction);
+            expect(model.getAction(0, 'edit')).toEqual(someAction);
+        });
+
+
+#### Explanation:
+tobe() function determines the expected value of the test and compare it with
+actual value coming after performing the test. If it is true then `assert true`
+otherwise `assert false`.
+
+toEqual() 
+toEqual(expectedValue) is a comparison function that evaluates to true or false.
+It must be called in the chain after the t. expect(value) or . and(value). 
+toEqual is equivalent to received === expected.
+
+addAction()
+The addAction() function throws control to a callback function that is executed 
+when the specified action is performed or detected.
+
+### Some Functions:
+#### it() fucntion:
+it() function is the function that is where actual logic of test case is implemented
+
+#### beforeeach()
+beforeeach() function is the function where we place the code which we want to be implement
+before every test case block or every it() function.
+
+#### aftereach()
+aftereach() function is the function where we place the code which we want to be implement
+after every test case block or every it() function.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
