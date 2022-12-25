@@ -1,5 +1,4 @@
 # SQE-Assignment-2-
-This assignment of Software Quality Assurance Course is related to Automation of testing
 
 
  Observations and Understandings of Existing Testing (ui,api,unit)automation done by Magento :-
